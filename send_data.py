@@ -112,7 +112,7 @@ def senser_get(ser,pi):
         resurt = compute_crc8_atm.compute_crc8_atm(byte_datagram, initial_value=0)
         msg = resurt.to_bytes(1,d_ed)
         ser.write(msg)
-        print(msg)
+        #print(msg)
 
         #end
         msg = b"\x03"
